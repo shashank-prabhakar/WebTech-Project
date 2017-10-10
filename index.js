@@ -3,6 +3,6 @@ const app = express();
 app.use(express.static('app'))
 
 
-app.listen(3000, function(){
-    console.log('Listening at 3000');
+app.listen((process.env.PORT || 5000), function(){
+    console.log('Listening at 5000');
 })
