@@ -2,148 +2,216 @@
 <html>
 
 <head>
-    <meta name="viewport" content="device=device-width" , initial-scale="1.0" />
-    <title>Cuisines</title>
+	<meta name="viewport" content="device=device-width" , initial-scale="1.0" />
+	<title>Cuisines</title>
 
-    <style>
-        h1 {
-            font-family: Raleway;
-            font-weight: normal;
-            color: white;
-            margin-left: 4%;
-            font-size: 70px;
-            margin-top: 0px;
-        }
+	<style>
+		h1 {
+			font-family: Raleway;
+			font-weight: normal;
+			color: white;
+			margin-left: 4%;
+			font-size: 70px;
+			margin-top: 0px;
+		}
 
-        body {
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-        }
+		body {
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
 
-        p {
-            font-family: Raleway;
-            font-weight: 400;
-            color: rgb(54, 53, 53);
-            margin-left: 4%;
-            font-size: 15px;
-            font-size-adjust: auto;
-            float: left;
-            float: inherit;
-            line-height: 1.5;
-        }
+		p {
+			font-family: Raleway;
+			font-weight: 400;
+			color: rgb(54, 53, 53);
+			margin-left: 4%;
+			font-size: 15px;
+			font-size-adjust: auto;
+			float: left;
+			float: inherit;
+			line-height: 1.5;
+		}
 
-        h3 {
-            font-family: Raleway;
-            color: rgb(54, 53, 53);
-            font-size: 30px;
-            font-weight: normal;
-        }
+		h3 {
+			font-family: Raleway;
+			color: rgb(54, 53, 53);
+			font-size: 30px;
+			font-weight: normal;
+		}
 
-        h3:hover {
-            font-weight: 600;
-            -webkit-transition-duration: 0.1s;
-            transform: translateY(4px);
-        }
+		h3:hover {
+			font-weight: 600;
+			-webkit-transition-duration: 0.1s;
+			transform: translateY(4px);
+		}
 
-        ul {
-            font-family: Raleway;
-            color: rgb(54, 53, 53);
-            font-size: 30px;
-            margin-left: 7%;
+		ul {
+			font-family: Raleway;
+			color: rgb(54, 53, 53);
+			font-size: 30px;
+			margin-left: 7%;
 
-        }
+		}
 
-        .fixed {
-            position: fixed;
-            margin-top: 410px;
-            margin-left: 1180px;
-        }
+		.fixed {
+			position: fixed;
+			margin-top: 410px;
+			margin-left: 1180px;
+		}
 
-        .Heading {
-            background-image: url("cuibg.jpg");
-            height: 250px;
-            margin: 0px;
-            margin-top: 0;
-            width: 100%;
-            line-height: 400px;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+		.Heading {
+			background-image: url("cuibg.jpg");
+			height: 250px;
+			margin: 0px;
+			margin-top: 0;
+			width: 100%;
+			line-height: 400px;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
 
-        .back {
-            margin-left: 1200px;
-            margin-bottom: 30px;
-        }
-    </style>
+		.back {
+			margin-left: 1200px;
+			margin-bottom: 30px;
+		}
+
+		.container {
+			position: relative;
+			width: 20%;
+		}
+
+		.image {
+			opacity: 1;
+			display: block;
+			width: 300px;
+			height: 180px;
+			tansition: .5s ease;
+			backface-visibility: hidden;
+			border-radius: 5px;
+		}
+
+		.middle {
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			left: 250%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			align: center;
+		}
+
+		.container:hover .image {
+			opacity: 0.3;
+			-webkit-transition: 0.4s;
+		}
+
+		.container:hover .middle {
+			opacity: 1;
+		}
+
+		.text {
+			font-family: Raleway;
+			color: rgb(70, 67, 67);
+			font-size: 19px;
+			font-weight:600;
+			padding: 16px;
+		}
+
+		table {
+			margin-left: 150px;
+			margin-top: 50px;
+			padding: 10px;
+			border-spacing: 15px;
+		}
+
+		
+	</style>
 </head>
+
 <body background="creambg.jpg" style="margin:0">
-    <div class="Heading">
-        <h1>Cuisines</h1>
-    </div>
+	<div class="Heading">
+		<h1>Cuisines</h1>
+	</div>
+
+	<table>
+		<tr>
+			<td>
+				<div class="container">
+					<a href="index.html" style="text-decoration:none">
+						<img src=" indianicon.jpeg" class="image">
+						<div class="middle">
+							<div class="text">Indian</div>
+						</div>
+					</a>
+				</div>
+			</td>
+			<td>
+				<div class="container">
+					<a href="index.html" style="text-decoration:none">
+						<img src=" italianicon.jpeg" class="image">
+						<div class="middle">
+							<div class="text">Italian</div>
+						</div>
+					</a>
+				</div>
+			</td>
+			<td>
+				<div class="container">
+					<a href="index.html" style="text-decoration:none">
+						<img src=" mediicon.jpeg" class="image">
+						<div class="middle">
+							<div class="text">Mediterranean</div>
+						</div>
+					</a>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="container">
+					<a href="index.html" style="text-decoration:none">
+						<img src=" chineseicon.jpeg" class="image">
+						<div class="middle">
+							<div class="text">Chinese</div>
+						</div>
+					</a>
+				</div>
+			</td>
+			<td>
+				<div class="container">
+					<a href="index.html" style="text-decoration:none">
+						<img src=" thaiicon.jpeg" class="image">
+						<div class="middle">
+							<div class="text">Thai</div>
+						</div>
+					</a>
+				</div>
+			</td>
+			<td>
+				<div class="container">
+					<a href="index.html" style="text-decoration:none">
+						<img src=" continentalicon.jpeg" class="image">
+						<div class="middle">
+							<div class="text">Continental</div>
+						</div>
+					</a>
+				</div>
+			</td>
+		</tr>
 
 
-
-    <ul>
-        <li>
-            <a href="index.html" style="text-decoration:none">
-                <h3>Indian</h3>
-            </a>
-            <p>
-                <hr />
-            </p>
-        </li>
-
-        <li>
-            <a href="index.html" style="text-decoration:none">
-                <h3>Italian</h3>
-            </a>
-            <p>
-                <hr />
-            </p>
-        </li>
-
-        <li>
-            <a href="index.html" style="text-decoration:none">
-                <h3>Continental</h3>
-            </a>
-            <p>
-                <hr />
-            </p>
-        </li>
-
-        <li>
-            <a href="index.html" style="text-decoration:none">
-                <h3>Chinese</h3>
-            </a>
-            <p>
-                <hr />
-               </p>
-        </li>
-        <li><a href="index.html" style="text-decoration:none"><h3>Mediterranean</h3></a>
-            <p>
-             <hr />
-            </p>
-      </li>
-      <li><a href="index.html" style="text-decoration:none"><h3>BBQ</h3></a>
-            <p>
-             <hr />
-            </p>
-      </li>
-      <li><a href="index.html" style="text-decoration:none"><h3>Thai</h3></a>
-            <p>
-             
-            </p>
-      </li>
-
-
-    </ul>
-    <div class="back">
-        <a href="index.html">
-            <img src="Back.png">
-        </a>
-    </div>
+	</table>
+	<div class="back">
+		<a href="index.html">
+			<img src="Back.png">
+		</a>
+	</div>
 
 </body>
 
 </html>
+
+
+
+
