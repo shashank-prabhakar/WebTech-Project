@@ -80,7 +80,7 @@ function searching() {
         case 'tim':
         case 'tao':
         case 'thailand':
-            window.open("thai.html");
+            window.open("Thai.html");
             break;
 
         case 'chinese':
@@ -90,7 +90,7 @@ function searching() {
         case 'manchurian':
         case 'snake':
         case 'insects':
-            window.open("chinese.html");
+            window.open("Chinese.html");
             break;
         
         case 'burger':
@@ -104,7 +104,8 @@ function searching() {
 
         case 'medi':
         case 'mediterranian':
-            window.open("mediterranian.html");
+        case 'mediterranean':
+            window.open("mediterranean.html");
             break;
 
 
