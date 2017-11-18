@@ -99,7 +99,7 @@ function searching() {
         case 'american':
         case 'america':
         case 'fried':
-            window.open("continental.html");
+            window.open("Continental.html");
             break;
 
         case 'medi':
