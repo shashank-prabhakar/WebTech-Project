@@ -4,6 +4,7 @@
 <head>
     <meta name="viewport" content="device=device-width" , initial-scale="1.0" />
     <title>Sign Up/ Sign In</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     <style>
         form {
             text-align: center;
@@ -155,7 +156,7 @@
 </head>
 <div>
 
-    <body background="bg-blur.jpg" width=5 0%>
+    <body background="bg-blur.jpg" width=50%>
         <a href="index.html">
             <img src="Back.png" class="fixed">
         </a>
@@ -170,7 +171,7 @@
 
                 <tr>
                     <td>
-                        <form action="login.php">
+                        <form action="">
                             Username
                             <input type="text" name="u_name">
                             
@@ -184,7 +185,7 @@
 
                     </td>
                     <td>
-                        <form action="login.php">
+                        <form action="insert.php" method="post">
                             Enter Your Name&nbsp&nbsp&nbsp&nbsp&nbsp
                             <input type="text" name="name">
                             <br/> Enter Your Email ID&nbsp
@@ -192,7 +193,7 @@
                             <br/> Enter Password&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                             <input type="password" name="password">
                             <br> Confirm Password&nbsp&nbsp
-                            <input type="password" name="password">
+                            <input type="password" name="chkpassword">
                             <br>
                             <button type="submit">Sign Up</button>
                             <br>

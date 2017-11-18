@@ -4,18 +4,19 @@
 <head>
     <meta name="viewport" content="device=device-width" , initial-scale="1.0" />
     <title>Oh My Foodness</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     <style type="text/css">
         .s1 {
             align-content: center;
             align-items: center;
             text-align: center;
         }
-        
+
         body {
             background-repeat: no-repeat;
             background-size: cover;
         }
-        
+
         h1 {
             border-style: intext;
             border-radius: 5px;
@@ -25,7 +26,7 @@
             margin-left: 20px;
             margin-right: 20px;
         }
-        
+
         button {
             font-size: 80%;
             width: 12.5%;
@@ -39,7 +40,7 @@
             font-weight: 500;
             margin: 5px;
         }
-        
+
         button:hover {
             text-decoration: none;
             background-color: white;
@@ -57,7 +58,7 @@
             margin: 5px;
 
         }
-        
+
         input[type=text] {
             padding: 8px 100px;
             border-radius: 50px;
@@ -71,6 +72,38 @@
             background-color: white;
             color: grey;
             text-align: center;
+        }
+
+        input[type=text]:focus {
+            outline: none;
+        }
+
+        .b1 {
+            font-size: 80%;
+            width: 4%;
+            background-color: black;
+            color: white;
+            font-family: Raleway;
+            border-radius: 40px;
+            padding-bottom: 6px;
+            padding-top: 6px;
+            border-width: 0;
+            font-weight: 500;
+            margin: 5px;
+        }
+
+        .b1:hover {
+            font-size: 80%;
+            width: 4%;
+            background-color: white;
+            color: black;
+            font-family: Raleway;
+            border-radius: 40px;
+            padding-bottom: 6px;
+            padding-top: 6px;
+            border-width: 0;
+            font-weight: 500;
+            margin: 5px;
         }
     </style>
 </head>
@@ -98,9 +131,29 @@
         <h1>
             <img src="logo.png" width="55%" />
         </h1>
-        <input class="s1" type="text" name="search" placeholder="Search Restaurants...">
+
+
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <form align="center">
+        <input class="s1" type="text" name="search" placeholder="Search" id="key">
+        <button class="b1" type="submit" onclick="searching()" id="b1">Go</button>
+    </form>
+
+
+    <script src="searchtext.js"></script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 </body>
 

@@ -7,6 +7,7 @@
     <meta name="viewport" content="device=device-width" , initial-scale="1.0" />
 
     <title>Contact Us</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 
     <style>
         h1 {
@@ -58,7 +59,27 @@
             position: relative;
             width: 24%;
             background-color: white;
-            color: lightgrey;
+            color: grey;
+            text-align: center;
+            float: left;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 10px;
+            margin-bottom: 70px;
+        }
+
+        input[type=tel] {
+            padding: 8px 50px;
+            border-radius: 50px;
+            font-size: 16px;
+            border-color: black;
+            border-width: 2px;
+            font-family: Raleway;
+            background-color: rgbla(0, 0, 0, 0);
+            position: relative;
+            width: 24%;
+            background-color: white;
+            color: grey;
             text-align: center;
             float: left;
             margin-left: 100px;
@@ -97,14 +118,14 @@
             margin-left: 550px;
             margin-bottom: 30px;
         }
-
         button:hover {
+            text-decoration: none;
             background-color: white;
             color: black;
-            cursor: pointer;
-            -webkit-transition-duration: 0.3s;
-            transform: translateY(4px);
-            padding: 10px 8px;
+            -webkit-transition-duration: 0.4s;
+            width: 13.3%;
+         
+
         }
 
         .s1 {
@@ -145,6 +166,26 @@
             align-items: center;
             text-align: center;
         }
+
+        input:active {
+            outline: none;
+     
+        }
+
+        input:focus {
+            outline: 0;
+    
+        }
+
+        textarea:active {
+            outline: none;
+            
+        }
+
+        textarea:focus {
+            outline: 0;
+   
+        }
     </style>
 
 </head>
@@ -176,14 +217,14 @@
         <br> </p>
 
 
-    <form action="">
+    <form action="contactphp.php" method="post" name="contactform">
 
         <input class="s1" type="text" name="Name" placeholder="Name">
 
-        <input class="s2" type="text" name="Email" placeholder="Email or Contact No.">
+        <input class="s2" type="tel" name="phone" placeholder="Contact No." size=10>
 
         <div class="s3">
-            <textarea name="Message" rows="5" cols="60">Enter your Message...</textarea>
+            <textarea name="Message" id="mes" rows="5" cols="60" placeholder="Enter Your Message..."></textarea>
             <br>
         </div>
         <br>
@@ -216,6 +257,8 @@
         <br>
     </div>
     <br>
+
+
 
 </body>
 
