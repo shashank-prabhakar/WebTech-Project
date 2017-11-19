@@ -10,13 +10,12 @@
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Document</title>
-    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <title>Logged In</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
 
 
 
     <style>
-
         h1 {
 
             font-family: Raleway;
@@ -78,8 +77,8 @@
 
         }
 
-        
-button:hover {
+
+        button:hover {
 
             text-decoration: none;
 
@@ -88,7 +87,7 @@ button:hover {
             color: black;
 
             cursor: pointer;
- 
+
         }
 
         h1 {
@@ -123,22 +122,35 @@ button:hover {
             display: block;
             margin: 0 auto;
         }
-        
+
         button:hover {
             text-decoration: none;
             background-color: white;
             color: black;
             cursor: pointer;
-            
+
 
         }
 
+        .error {
+            border: 2px solid red;
+            border-radius: 10px;
+            background-color: DarkSalmon;
+            align: center;
+            text-align: center;
+            color: DarkRed;
+            width: 200px;
+            font-family: Raleway;
+            margin: 0px auto;
+
+            padding: 10px;
+        }
     </style>
 
 </head>
 
 
-<body background="creambg.jpg">
+
 
 
 
@@ -147,6 +159,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "project";
+$errors = array();
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -158,8 +171,23 @@ $Password=$_POST['password'];
 
 $ChkPassword=$_POST['chkpassword'];
 
-$sql = "INSERT INTO members (User_Name,Email,Password,Confirm_Password)
-VALUES ( '$Name', '$Email','$Password','$ChkPassword')";
+if(empty($Name)){
+	array_push($errors, "UserName is required ");
+}
+if(empty($Email)){
+	array_push($errors, "Email is required ");
+}
+if(empty($Password)){
+	array_push($errors, "Password is required ");
+}
+
+if($Password != $ChkPassword){
+	array_push($errors, " Passwords don't match! ");
+}
+
+if(count($errors)==0){
+	$sql = "INSERT INTO members (User_Name,Email,Password,Confirm_Password)
+	VALUES ( '$Name', '$Email','$Password','$ChkPassword')";
 
 
 
@@ -168,18 +196,36 @@ $sql = "INSERT INTO members (User_Name,Email,Password,Confirm_Password)
 VALUES ('john','jac@gmail.com','1234','1234')";
 */
 
-$insert = $conn->query($sql);
+	$insert = $conn->query($sql);
+ }
 
 $conn->close();
 
+
 ?>
 
+    <?php if(count($errors)==0): ?>
+    <h1> Thank you for registering! You are now logged in.</h1>
 
-<h1> Thank you. You are now logged in.</h1>
-    <img src="logo.png" align="middle" height=40% width=40%>
-    <br><br><br><br>
-    <button onclick="location.href='index.html'">Home</button>
-</body>
-
+    <body background="creambg.jpg">
+        <img src="logo.png" align="middle" height=40% width=40%>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button id="Success" onclick="location.href='index.html'">Home</button>
+    </body>
 
 </html>
+<?php endif ?>
+
+<?php if(count($errors)>0): ?>
+<div class="error">
+    <?php foreach ($errors as $error): ?>
+    <p>
+        <?php echo $error; ?>
+    </p>
+    <?php endforeach?>
+</div>
+<?php include('sign.php');?>
+<?php endif ?>

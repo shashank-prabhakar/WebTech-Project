@@ -3,9 +3,38 @@
 
 <head>
     <meta name="viewport" content="device=device-width" , initial-scale="1.0" />
-    <title>Sign Up/ Sign In</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <title>Sign Up/ Sign In</title>
     <style>
+		h1 {
+
+            font-family: Raleway;
+
+            font-weight: normal;
+
+            color: cadetblue;
+
+            margin-left: 4%;
+
+            font-size: 50px;
+
+            margin-top: 8%;
+
+            text-align: center;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        img {
+
+            display: block;
+
+            margin: 0 auto;
+
+        }
+
         form {
             text-align: center;
             vertical-align: bottom;
@@ -43,7 +72,7 @@
             color: white;
             cursor: pointer;
             -webkit-transition-duration: 0.3s;
-            transform: translateY(4px);
+            transform: translateY(0px);
             
 
 
@@ -110,7 +139,7 @@
 
         .fixed {
             position: fixed;
-            margin-top: 510px;
+            margin-top: 430px;
             margin-left: 1180px;
         }
 
@@ -152,6 +181,8 @@
             align-content: center;
 
         }
+
+		
     </style>
 </head>
 <div>
@@ -172,13 +203,13 @@
 
                 <tr>
                     <td>
-                        <form action="">
+                        <form action="login.php" method="post">
                             Username
                             <input type="text" name="u_name">
                             
                             
                             <br/> Password
-                            <input type="password" name="password">
+                            <input type="password" name="password1">
                             <br/>
                             <button type="submit">Log In</button>
                             <br>
@@ -187,13 +218,14 @@
                     </td>
                     <td>
                         <form action="insert.php" method="post">
-                            Enter Your Name&nbsp&nbsp&nbsp&nbsp&nbsp
+							
+                            Enter Username&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                             <input type="text" name="name">
                             <br/> Enter Your Email ID&nbsp
                             <input type="email" name="email">
                             <br/> Enter Password&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                             <input type="password" name="password">
-                            <br> Confirm Password&nbsp&nbsp
+                            <br> Confirm Password&nbsp&nbsp&nbsp
                             <input type="password" name="chkpassword">
                             <br>
                             <button type="submit">Sign Up</button>
@@ -209,5 +241,6 @@
         </div>
          
     </body>
+
 
 </html>
