@@ -14,11 +14,15 @@ function searching() {
 
 
         case 'little italy':
+        case 'italy':
+        case 'little':
             window.open("littleitaly.html");
             break;
 
 
         case 'stoner':
+        case 'stobed':
+        case 'stone':
             window.open("stoner.html");
             break;
 
@@ -60,6 +64,7 @@ function searching() {
             break;
 
         case 'dosa':
+        case 'masala dosa':
         case 'idly':
         case 'south indian':
         case 'south':
@@ -74,6 +79,7 @@ function searching() {
         case 'chutney':
         case 'sambhar':
         case 'idli':
+        case 'sambar':
             window.open("southindian.html");
             break;
 
@@ -91,7 +97,6 @@ function searching() {
     
         case 'thai':
         case 'tim':
-        case 'tao':
         case 'thailand':
             window.open("Thai.html");
             break;
@@ -153,18 +158,18 @@ function searching() {
         case 'koramangala':
         case 'kormangla':
         case 'koramangla':
+        case 'koro':
             window.open("koramangala.html");
             break;
 
 
-        case 'hsr':
-        case 'hsr layout':
-        case 'old airport road':
-        case 'marathahalli':
-        case 'marathalli':
-        case 'kalyan nagar':
-        case 'kalyan':
-            window.open("otherlocations.html");
+        case 'chicken':
+        case 'type':
+        case 'veg':
+        case 'nonveg':
+        case 'non veg':
+        case 'cuisine':
+            window.open("cuisines.html");
             break;
 
 
@@ -179,18 +184,61 @@ function searching() {
             window.open("indiranagar.html");
             break;
 
-        case 'mg':
-        case 'm g':
-        case 'mg road':
-        case 'm g road':
-        case 'gandhi':
-        case 'mahathma gandhi road':
-        case 'mahatma gandhi road':
-        case 'brigade':
-        case 'brigade road':
-        case 'church street':
-        case 'church':
-            window.open("otherlocations.html");
+        case '1947':
+            window.open("1947.html");
+            break;
+
+        case 'punjab':
+        case 'punjab grill':
+        case 'grill':
+            window.open("punjabgrill.html");
+            break;
+
+        case 'byblos':
+            window.open("byblos.html");
+            break;
+        
+        case 'socials':
+        case 'koramangala socials':
+        case 'koro socials':
+            window.open("socials.html");
+            break;
+
+        case 'bricklane':
+        case 'brick lane':
+        case 'brick':
+        case 'lane':
+            window.open("bricklane.html");
+            break;
+
+        case 'vidyarthi':
+        case 'vidyarti':
+        case 'bhavan':
+        case 'vidyarthi bhavan':
+        case 'vidyarti bhavan':
+            window.open("vidarthi.html");
+            break;
+        
+        case 'slv':
+            window.open("socials.html");
+            break;
+
+        case 'bbq':
+        case 'bbqn':
+        case 'barbeque nation':
+        case 'barbeque':
+            window.open("bbqn.html");
+            break;
+
+        case 'tao teracces':
+        case 'tao terrace':
+        case 'tao':
+            window.open("tao.html");
+            break;
+
+        case 'yauacha':
+        case 'yauatcha':
+            window.open("bbqn.html");
             break;
 
 
